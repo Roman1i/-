@@ -11,8 +11,6 @@ for (int i = 0; i < n; i++)
     if ( strings[i].Length <= 3 ) count++;
 }
     
-Console.WriteLine("[" + string.Join(", ", strings) + "]");
-
 string[] strings2 = new string[count];
 int x = 0;
 
@@ -22,5 +20,6 @@ for (int i = 0; i < n; i++)
         strings2[x++] = strings[i];
 }
 
+Console.WriteLine("[" + string.Join(", ", strings) + "]");
 Console.WriteLine("[" + string.Join(", ", strings2) + "]");
 
