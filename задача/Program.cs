@@ -1,20 +1,20 @@
 ﻿Console.Write("Введите колличество строк: ");
-int n = Convert.ToInt32(Console.ReadLine());
-int count = 0;
+int arraySize = Convert.ToInt32(Console.ReadLine());
+int array2Size = 0;
 
-string[] strings = new string[n];
+string[] strings = new string[arraySize];
 
-for (int i = 0; i < n; i++) 
+for (int i = 0; i < strings.Length; i++) 
 {
     Console.Write("Введите строку: ");
     strings[i] = Console.ReadLine();
-    if ( strings[i].Length <= 3 ) count++;
+    if ( strings[i].Length <= 3 ) array2Size++;
 }
     
-string[] strings2 = new string[count];
+string[] strings2 = new string[array2Size];
 int x = 0;
 
-for (int i = 0; i < n; i++) 
+for (int i = 0; i < strings.Length; i++) 
 {
     if ( strings[i].Length <= 3 ) 
         strings2[x++] = strings[i];
